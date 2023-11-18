@@ -19,6 +19,9 @@ namespace ProjectEulerSolutions
                 case 89:
                     p89.Run();
                     break;
+                case 92:
+                    p92.Run();
+                    break;
                 default:
                     Console.WriteLine("Solution not implemented");
                     break;
