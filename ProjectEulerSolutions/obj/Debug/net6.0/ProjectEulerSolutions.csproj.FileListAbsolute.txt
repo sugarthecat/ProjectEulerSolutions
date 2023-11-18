@@ -1,0 +1,15 @@
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\bin\Debug\net6.0\ProjectEulerSolutions.exe
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\bin\Debug\net6.0\ProjectEulerSolutions.deps.json
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\bin\Debug\net6.0\ProjectEulerSolutions.runtimeconfig.json
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\bin\Debug\net6.0\ProjectEulerSolutions.dll
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\bin\Debug\net6.0\ProjectEulerSolutions.pdb
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\obj\Debug\net6.0\ProjectEulerSolutions.csproj.AssemblyReference.cache
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\obj\Debug\net6.0\ProjectEulerSolutions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\obj\Debug\net6.0\ProjectEulerSolutions.AssemblyInfoInputs.cache
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\obj\Debug\net6.0\ProjectEulerSolutions.AssemblyInfo.cs
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\obj\Debug\net6.0\ProjectEulerSolutions.csproj.CoreCompileInputs.cache
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\obj\Debug\net6.0\ProjectEulerSolutions.dll
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\obj\Debug\net6.0\refint\ProjectEulerSolutions.dll
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\obj\Debug\net6.0\ProjectEulerSolutions.pdb
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\obj\Debug\net6.0\ProjectEulerSolutions.genruntimeconfig.cache
+C:\Users\TJPNi\source\repos\ProjectEulerSolutions\ProjectEulerSolutions\obj\Debug\net6.0\ref\ProjectEulerSolutions.dll
