@@ -17,4 +17,5 @@ do {
 }while(solutionInt < 0);
 
 SolutionManager.RunSolution(solutionInt);
+Console.WriteLine("Completed");
 Console.ReadLine();
