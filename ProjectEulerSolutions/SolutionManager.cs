@@ -19,6 +19,9 @@ namespace ProjectEulerSolutions
                 case 89:
                     p89.Run();
                     break;
+                case 91:
+                    p91.Run();
+                    break;
                 case 92:
                     p92.Run();
                     break;

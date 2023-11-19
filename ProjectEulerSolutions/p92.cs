@@ -10,6 +10,7 @@ namespace ProjectEulerSolutions
     {
         public static void Run()
         {
+            //proud of this, should trend towards O(n), or O(1) per sim
             int reaches89 = 0;
             const int sim_max = 10000000; //10 million
             int[] destinations = new int[sim_max];
