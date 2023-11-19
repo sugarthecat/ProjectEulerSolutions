@@ -2,6 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs
-/ProjectEulerSolutions/bin
-/ProjectEulerSolutions/obj
+/ProjectEulerSolutions/obj/Debug/
+/ProjectEulerSolutions/bin/Debug/
+/.vs/ProjectEulerSolutions/FileContentIndex/00abc1a0-b3bf-4b36-b4a7-1b3dc9ffdc5d.vsidx
