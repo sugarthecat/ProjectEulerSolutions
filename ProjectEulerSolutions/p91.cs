@@ -12,7 +12,7 @@ namespace ProjectEulerSolutions
         {
             //looks like O(n^4)
             int count = GetPossibleRightTriangles(50, 50);
-            Console.WriteLine("Count: " + count);
+            Console.WriteLine("Triangle count: " + count);
         }
         public static int GetPossibleRightTriangles(int xmax, int ymax)
         {
@@ -53,7 +53,7 @@ namespace ProjectEulerSolutions
             int currY = y - run;
             while (currX <= xmax && currY >= 0)
             {
-                Console.WriteLine("(0,0) ("+x+","+y+") ("+currX+","+currY+")");
+                //Console.WriteLine("(0,0) ("+x+","+y+") ("+currX+","+currY+")");
                 triangleCount++;
                 currX += rise;
                 currY -= run;
@@ -63,7 +63,7 @@ namespace ProjectEulerSolutions
             currY = y + run;
             while (currY <= ymax && currX >= 0)
             {
-                Console.WriteLine("(0,0) (" + x + "," + y + ") (" + currX + "," + currY + ")");
+                //Console.WriteLine("(0,0) (" + x + "," + y + ") (" + currX + "," + currY + ")");
                 triangleCount++;
                 currX -= rise;
                 currY += run;
