@@ -11,10 +11,14 @@ namespace ProjectEulerSolutions
 
         public static void RunSolution(int index)
         {
-            switch(index)
+            Console.WriteLine("--------");
+            switch (index)
             {
                 case 51:
                     p51.Run();
+                    break;
+                case 79:
+                    p79.Run();
                     break;
                 case 89:
                     p89.Run();

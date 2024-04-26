@@ -27,7 +27,7 @@ namespace ProjectEulerSolutions
         /// <returns>the text contents of the file</returns>
         public static string[] ReadFileLines(string fileName)
         {
-            StreamReader sr = new StreamReader("../../../../" + fileName);
+            StreamReader sr = new StreamReader("../../../" + fileName);
             string output = sr.ReadToEnd();
             sr.Close();
             return output.Split('\n');

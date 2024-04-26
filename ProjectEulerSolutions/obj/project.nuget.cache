@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ZAwCpLYGIgKcGSfo8piiwp6XsRwG7MmIjIMxYExqU8oACuHq9RWERzph4auy0R9DDv/n1lfF+agN4kamZwBLVA==",
+  "dgSpecHash": "rGkRHFE3uEZiQduOaAxYoZTAzZ1RT3hePGr7vq+5svUWMhOZEBTgreueTa5UFixhapviyhy34UmRhVhu9GWoZg==",
   "success": true,
   "projectFilePath": "C:\\Users\\TJPNi\\source\\repos\\ProjectEulerSolutions\\ProjectEulerSolutions\\ProjectEulerSolutions.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\TJPNi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\TJPNi\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\TJPNi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\TJPNi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512"
+  ],
   "logs": []
 }
