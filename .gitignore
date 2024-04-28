@@ -2,11 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/ProjectEulerSolutions/obj/Debug/
-/ProjectEulerSolutions/bin/Debug/
-/.vs/ProjectEulerSolutions/
-/.vs/ProjectEulerSolutions/DesignTimeBuild/.dtbcache.v2
-/.vs/ProjectEulerSolutions/v17/.suo
-/.vs/ProjectEulerSolutions/v17/.futdcache.v2
-/.vs/ProjectEvaluation/projecteulersolutions.projects.v7.bin
-/.vs/ProjectEvaluation/projecteulersolutions.metadata.v7.bin
+/ProjectEulerSolutions/obj/
+/ProjectEulerSolutions/bin/
+/.vs/
