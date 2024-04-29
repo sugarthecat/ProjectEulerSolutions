@@ -27,5 +27,27 @@ namespace ProjectEulerSolutions
                 return GCF(n2, n1 % n2);
             }
         }
+        /// <summary>
+        /// Checks if a given number is prime
+        /// Precondition: n is 2 or larger
+        /// </summary>
+        /// <param name="n">the number to check prime status</param>
+        /// <returns>a boolean, true if and only if the number is prime</returns>
+        public static bool IsPrime(int n)
+        {
+            if(n <= 1)
+            {
+                return false;
+            }
+            int max = (int)Math.Ceiling(Math.Sqrt(n));
+            for(int i = 2; i < max; i++)
+            {
+                if(n % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }

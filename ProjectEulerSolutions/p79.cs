@@ -7,7 +7,6 @@
             string[] lines = TextReader.ReadFileLines("0079_keylog.txt");
 
             string start = "";
-            string end = "";
 
             List<char> characters = new List<char>();
             foreach (string line in lines)
