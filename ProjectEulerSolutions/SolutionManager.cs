@@ -20,6 +20,9 @@ namespace ProjectEulerSolutions
                 case 54:
                     p54.Run();
                     break;
+                case 73:
+                    p73.Run();
+                    break;
                 case 79:
                     p79.Run();
                     break;
@@ -31,6 +34,9 @@ namespace ProjectEulerSolutions
                     break;
                 case 92:
                     p92.Run();
+                    break;
+                case 95:
+                    p95.Run();
                     break;
                 default:
                     Console.WriteLine("Solution not implemented");
