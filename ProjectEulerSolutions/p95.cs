@@ -4,51 +4,60 @@
     {
         public static void Run()
         {
-            int maxSearch = 15000;
-            bool[] searched = new bool[maxSearch+1];
+            int maxSearch = 1000000;
+            bool[] searched = new bool[maxSearch + 1];
             int searchOn = 1;
             int largestAmicableChainLength = 0;
-            int largestAmicableChain;
-            while(searchOn < maxSearch)
+            int largestAmicableChain = 2;
+            while (searchOn < maxSearch)
             {
                 if (!searched[searchOn])
                 {
-                    Console.WriteLine(searchOn);
-                    int length = 1;
+                    List<int> numRing = new List<int>() { searchOn };
                     int originalNumber = searchOn;
                     int nextNum = findNextNumber(searchOn);
-                    if (originalNumber == 12496)
-                    {
-                        Console.WriteLine(nextNum);
-                    }
                     while (nextNum != originalNumber && nextNum <= maxSearch && !searched[nextNum])
                     {
                         searched[nextNum] = true;
-                        length++;
+                        numRing.Add(nextNum);
                         nextNum = findNextNumber(nextNum);
                     }
-                    if (nextNum  == originalNumber && length > largestAmicableChainLength)
+                    int length = 0;
+                    for(int i = 0; i<numRing.Count; i++)
                     {
-                        largestAmicableChain = searchOn;
+                        if (numRing[i] == nextNum)
+                        {
+                            length = numRing.Count-i;
+                            originalNumber = numRing[i];
+                        }
+                    }
+                    if (nextNum == originalNumber && length > largestAmicableChainLength)
+                    {
+                        largestAmicableChain = originalNumber;
                         largestAmicableChainLength = length;
                         Console.WriteLine("Largest: " + largestAmicableChain);
                         Console.WriteLine("Length: " + largestAmicableChainLength);
                     }
-                    else
-                    {
-                        Console.WriteLine("no work out - " + searchOn);
-                    }
                 }
                 searchOn++;
             }
+            Console.WriteLine("--------");
+            //display full chain
+            int n = largestAmicableChain;
+            for(int i = 0; i<largestAmicableChainLength; i++)
+            {
+                Console.WriteLine(n + " -> " + findNextNumber(n));
+                n = findNextNumber(n);
+            }
         }
+
         public static int findNextNumber(int prevNum)
         {
-            if(prevNum == 1)
+            if (prevNum == 1)
             {
                 return 1;
             }
-            return MathPlus.Sum(MathPlus.GetProperDivisors(prevNum))-prevNum;
+            return MathPlus.Sum(MathPlus.GetProperDivisors(prevNum)) - prevNum;
         }
     }
 }
