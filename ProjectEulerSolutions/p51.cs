@@ -19,13 +19,26 @@
             for(int i = 1; i<7; i++)
             {
                 Evaluation eval = GetLargestValue("", i);
-
                 Console.WriteLine("---------");
-                Console.WriteLine(eval.format);
-                Console.WriteLine(eval.result);
+                Console.WriteLine("Format: " + eval.format);
+                Console.WriteLine("Result: " + eval.result);
+                Console.WriteLine("Smallest Prime: "+GetSmallestPrime(eval.format));
             }
         }
+        private static int GetSmallestPrime(string format)
+        {
 
+            int initial = 0;
+            for (int i = initial; i < 10; i++)
+            {
+                int newNum = Convert.ToInt32(format.Replace('*', i.ToString()[0])); // converts i to char
+                if (MathPlus.IsPrime(newNum))
+                {
+                    return newNum;
+                }
+            }
+            return 0;
+        }
         // takes in format (ex: "9*1")
         // outputs count of valid primes
         private static int GetPossibleValueCount(string format)
@@ -37,7 +50,7 @@
             {
                 initial = 1;
             }
-            for (int i = 0; i < 10; i++)
+            for (int i = initial; i < 10; i++)
             {
                 int newNum = Convert.ToInt32(format.Replace('*', i.ToString()[0])); // converts i to char
                 if (MathPlus.IsPrime(newNum)){
@@ -56,6 +69,10 @@
             if (futureGens > 0)
             {
                 string chars = "0123456789*";
+                if(prevString.Length == 0)
+                {
+                    chars = chars.Substring(1);
+                }
                 Evaluation bestEval = GetLargestValue(prevString + chars[0], futureGens-1);
                 for (int i = 1; i < chars.Length; i++)
                 {
