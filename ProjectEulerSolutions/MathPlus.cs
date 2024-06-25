@@ -173,5 +173,30 @@
             }
             return sum;
         }
+        /// <summary>
+        /// Sorts the digits of a number, from highest to lowest. Used in matching numbers with the same digits in different orders.
+        /// </summary>
+        /// <param name="n">The number to sort</param>
+        /// <returns>the number which consists of the input's digits sorted</returns>
+        public static int SortNumber(int n)
+        {
+            int num = n;
+            int[] ints = new int[10];
+            while(num > 0)
+            {
+                ints[num%10]++;
+                num /= 10;
+            }
+            int output = 0;
+            for(int i = 9; i>=0; i--)
+            {
+                for(int j = 0; j < ints[i]; j++)
+                {
+                    output *= 10;
+                    output += i;
+                }
+            }
+            return output;
+        }
     }
 }
