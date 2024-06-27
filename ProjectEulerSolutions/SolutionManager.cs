@@ -26,6 +26,12 @@ namespace ProjectEulerSolutions
                 case 61:
                     p61.Run();
                     break;
+                case 69:
+                    p69.Run();
+                    break;
+                case 70:
+                    p70.Run();
+                    break;
                 case 73:
                     p73.Run();
                     break;

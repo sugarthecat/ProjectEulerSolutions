@@ -87,7 +87,7 @@
                 if (numOn % i == 0)
                 {
                     primeFactors.Add(i);
-                    while(numOn % i == 0)
+                    while (numOn % i == 0)
                     {
                         numOn /= i;
                     }
@@ -100,6 +100,7 @@
             }
             return primeFactors.ToArray();
         }
+
         /// <summary>
         /// Gets an array of proper divisors for a given number
         /// </summary>
@@ -107,8 +108,7 @@
         /// <returns>the array of proper divisors</returns>
         public static int[] GetProperDivisors(int n)
         {
-
-            List<int> divisors = new List<int>() { 1};
+            List<int> divisors = new List<int>() { 1 };
             int numOn = n;
             int maxSearch = (int)Math.Ceiling(Math.Sqrt(n));
             for (int i = 2; i <= maxSearch; i++)
@@ -122,12 +122,12 @@
                         numOn /= i;
                     }
                     int normalMax = divisors.Count;
-                    
-                    for(int j = 0;j<normalMax; j++)
+
+                    for (int j = 0; j < normalMax; j++)
                     {
-                        for(int k = 1; k<=count;k++)
+                        for (int k = 1; k <= count; k++)
                         {
-                            divisors.Add(Exponent(i,k) * divisors[j]);
+                            divisors.Add(Exponent(i, k) * divisors[j]);
                         }
                     }
                 }
@@ -138,11 +138,12 @@
                 int normalMax = divisors.Count;
                 for (int j = 0; j < normalMax; j++)
                 {
-                    divisors.Add(numOn* divisors[j]);
+                    divisors.Add(numOn * divisors[j]);
                 }
             }
             return divisors.ToArray();
         }
+
         /// <summary>
         /// Finds an integer exponent, of the form a^b
         /// Precondition: exp is not negative
@@ -153,12 +154,13 @@
         public static int Exponent(int baseN, int exp)
         {
             int fx = 1;
-            for(int i= 0; i<exp; i++)
+            for (int i = 0; i < exp; i++)
             {
                 fx *= baseN;
             }
             return fx;
         }
+
         /// <summary>
         /// Sums up an array of integers
         /// </summary>
@@ -166,13 +168,14 @@
         /// <returns>the sum</returns>
         public static int Sum(int[] ints)
         {
-            int sum = 0; 
-            for(int i = 0; i<ints.Length; i++)
+            int sum = 0;
+            for (int i = 0; i < ints.Length; i++)
             {
                 sum += ints[i];
             }
             return sum;
         }
+
         /// <summary>
         /// Sorts the digits of a number, from highest to lowest. Used in matching numbers with the same digits in different orders.
         /// </summary>
@@ -182,21 +185,42 @@
         {
             int num = n;
             int[] ints = new int[10];
-            while(num > 0)
+            while (num > 0)
             {
-                ints[num%10]++;
+                ints[num % 10]++;
                 num /= 10;
             }
             int output = 0;
-            for(int i = 9; i>=0; i--)
+            for (int i = 9; i >= 0; i--)
             {
-                for(int j = 0; j < ints[i]; j++)
+                for (int j = 0; j < ints[i]; j++)
                 {
                     output *= 10;
                     output += i;
                 }
             }
             return output;
+        }
+
+        /// <summary>
+        /// Precondition: n > 1 <br/>
+        /// Calculates the Euler Totient function of a given integer
+        /// </summary>
+        /// <returns></returns>
+        public static int Totient(int n)
+        {
+            int[] primeFactors = GetUniquePrimeFactors(n);
+
+            if (primeFactors.Length == 1 && primeFactors[0] == n)
+            {
+                return n - 1;
+            }
+            int final = n - 1;
+            for (int i = 0; i < primeFactors.Length; i++)
+            {
+                final -= final / primeFactors[i];
+            }
+            return final;
         }
     }
 }
